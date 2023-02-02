@@ -16,11 +16,5 @@ export const head: DocumentHead = {
       name: 'description',
       content: 'a blog site about everything Super Mario related',
     },
-  ],
-  links: [
-    {
-      rel: 'stylesheet',
-      href: 'somestylesheet.com/styles.css'
-    }
   ]
 };

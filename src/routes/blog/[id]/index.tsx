@@ -8,8 +8,14 @@ interface BlogData {
   content: string
 }
 
-export const onGet: RequestHandler<BlogData> = async ({ params }) => {
+export const onGet: RequestHandler<BlogData> = async ({ params, response }) => {
   const res = await fetch('http://localhost:3000/blogs/' + params.id)
+
+  if (!res.ok) {
+    console.log('redirecting user')
+    throw response.redirect('/')
+  }
+
   const data = await res.json()
 
   return data

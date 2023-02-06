@@ -44,3 +44,11 @@ button {
   cursor: pointer;
   font-family: "Poppins";
 }
+
+/* blog grid */
+.blogs {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}

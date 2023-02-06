@@ -33,3 +33,14 @@ footer {
   text-align: center;
   flex-grow: 1
 }
+
+/* buttons */
+button {
+  background-color: var(--theme-red);
+  border: 0;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-family: "Poppins";
+}

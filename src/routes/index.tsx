@@ -1,6 +1,6 @@
 import { component$, Resource } from '@builder.io/qwik';
 import type { DocumentHead, RequestHandler } from '@builder.io/qwik-city';
-import { useEndpoint } from '@builder.io/qwik-city';
+import { useEndpoint, Link } from '@builder.io/qwik-city';
 
 interface BlogData {
   id: string,
@@ -33,6 +33,7 @@ export default component$(() => {
               <div key={blog.id}>
                 <h3>{blog.title}</h3>
                 <p>{blog.content.slice(0,50)}...</p>
+                <Link href={"/blog/" + blog.id}>Read More</Link>
               </div>
             ))}
           </div>

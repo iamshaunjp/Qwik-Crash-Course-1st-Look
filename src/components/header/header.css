@@ -1,34 +1,34 @@
 header {
+  background-color: var(--theme-yellow);
+}
+nav {
   display: flex;
-  background: white;
-  border-bottom: 10px solid var(--qwik-dark-purple);
+  padding: 10px;
+  max-width: 1260px;
+  margin: 0 auto;
+  align-items: center;
 }
-
-header .logo a {
+nav img {
+  width: 40px;
+  height: 50px;
+}
+nav h1 {
+  margin-left: 10px;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 2em;
+}
+nav li {
   display: inline-block;
-  padding: 10px 10px 7px 20px;
+  margin-left: 10px;
 }
-
-header ul {
-  margin: 0;
-  padding: 3px 10px 0 0;
-  list-style: none;
-  flex: 1;
-  text-align: right;
-}
-
-header li {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-header li a {
-  display: inline-block;
-  padding: 15px 10px;
+nav a {
+  color: white;
   text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
-
-header li a:hover {
-  text-decoration: underline;
+nav a:hover {
+  background-color: white;
+  color: #111;
 }

@@ -17,3 +17,19 @@ h1, h2, h3, h4 {
   margin: 0;
   font-size: 1.8em;
 }
+p {
+  color: #777;
+}
+
+/* layout style */
+.container{
+  max-width: 1260px;
+  margin: 40px auto;
+  padding: 10px;
+}
+footer {
+  background: #ddd;
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1
+}

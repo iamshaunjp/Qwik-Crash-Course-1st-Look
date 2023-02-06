@@ -6,6 +6,7 @@ export default component$(() => {
     <>
       <main>
         <Header />
+        <p>THIS IS THE TEST LAYOUT</p>
         <section class="container">
           <Slot />
         </section>

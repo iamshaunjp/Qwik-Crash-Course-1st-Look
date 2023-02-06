@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --theme-yellow: #f6cd25;
   --theme-red: #dc163b;

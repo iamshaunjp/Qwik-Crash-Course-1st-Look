@@ -5,12 +5,13 @@ export default component$(() => {
   const counter = useSignal(0)
   const tens = useSignal(0)
 
+  // *** useTask ***
   // runs on the server
   // then after every change to tracked state
   // use if you want to ren code pre-render on the server
   // use if you want to run code in the browser after state changes
   useTask$(({ track }) => {
-    // console.log('useTask -', counter.value)
+    // console.log('useTask ran')
     track(counter)
 
     if (counter.value % 2 === 0) {
@@ -21,10 +22,12 @@ export default component$(() => {
     }
   })
 
+  // *** useClientEffect *** 
   // runs on the client only, eagerly
   // also after every change to tracked state
   // use if you need to immediately run code in the browser
   useClientEffect$(({ track }) => {
+    // console.log('useClientEffect ran')
     track(tens)
 
     console.log('useClientEffect', tens.value)

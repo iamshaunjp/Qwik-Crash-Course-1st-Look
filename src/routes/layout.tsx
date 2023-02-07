@@ -14,9 +14,8 @@ export default component$(() => {
     // console.log('useTask ran')
     track(counter)
 
-    if (counter.value % 2 === 0) {
-      console.log('useTask -', counter.value)
-    }
+    console.log('useTask -', counter.value)
+
     if (counter.value === 10) {
       tens.value++
     }

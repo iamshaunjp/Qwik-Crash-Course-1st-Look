@@ -22,6 +22,7 @@ export default component$(() => {
       </head>
       <body lang="en">
         <RouterOutlet />
+        {/* Added test comment */}
         <ServiceWorkerRegister />
       </body>
     </QwikCityProvider>

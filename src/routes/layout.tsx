@@ -6,14 +6,12 @@ export default component$(() => {
     <>
       <main>
         <Header />
-        <section>
+        <section class="container">
           <Slot />
         </section>
       </main>
       <footer>
-        <a href="https://www.builder.io/" target="_blank">
-          Made with ♡ by Builder.io
-        </a>
+        <p>Copyright 2023 Mario Life.</p>
       </footer>
     </>
   );
